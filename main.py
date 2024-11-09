@@ -25,13 +25,13 @@ def main():
     current_datetime = datetime.datetime.now()
 
     while True:
-        command = input(""+"\n")
+        command = input("\n")
         data = {}
 
-        if command.strip().lower == 'exit':
+        if command.strip() == 'exit':
             print("Goodbye!!!")
             break
-        
+             
         try:
             args = parse_command(command)
             if args.action == 'add':
